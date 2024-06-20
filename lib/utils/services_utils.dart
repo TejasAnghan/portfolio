@@ -5,15 +5,13 @@ class ServicesUtils {
     StaticUtils.appDev,
     StaticUtils.uiux,
     StaticUtils.rapid,
-    StaticUtils.blog,
     StaticUtils.openSource,
   ];
 
   static const List<String> servicesTitles = [
     "Mobile App Development",
     "UI/UX Designing",
-    "Rapid Prototyping",
-    "Technical Blog Writing",
+    "Backend Development",
     "Open Source - GitHub",
   ];
 
