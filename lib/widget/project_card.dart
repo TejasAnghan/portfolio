@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:folio/configs/configs.dart';
-import 'package:folio/constants.dart';
+
 import 'package:folio/provider/app_provider.dart';
 
 import 'package:provider/provider.dart';
 
+// ignore: must_be_immutable
 class ProjectCard extends StatefulWidget {
   final String? banner;
   final String? projectLink;
@@ -12,10 +13,14 @@ class ProjectCard extends StatefulWidget {
   final String projectTitle;
   final String projectDescription;
   final IconData? projectIconData;
+  final int index;
+  void Function(int)? onTap;
 
-  const ProjectCard({
+  ProjectCard({
     Key? key,
+    this.index = 1,
     this.banner,
+    this.onTap,
     this.projectIcon,
     this.projectLink,
     this.projectIconData,
@@ -40,11 +45,9 @@ class ProjectCardState extends State<ProjectCard> {
       hoverColor: Colors.transparent,
       splashColor: Colors.transparent,
       highlightColor: Colors.transparent,
-      onTap: widget.projectLink == null
-          ? () {}
-          : () => openURL(
-                widget.projectLink!,
-              ),
+      onTap: () {
+        if (widget.onTap != null) widget.onTap!(widget.index);
+      },
       onHover: (isHovering) {
         if (isHovering) {
           setState(() {
@@ -63,7 +66,7 @@ class ProjectCardState extends State<ProjectCard> {
         height: AppDimensions.normalize(90),
         decoration: BoxDecoration(
           color: appProvider.isDark ? Colors.grey[900] : Colors.white,
-          borderRadius: BorderRadius.circular(10),
+          borderRadius: BorderRadius.circular(7),
           boxShadow: isHover
               ? [
                   BoxShadow(
@@ -144,13 +147,19 @@ class ProjectCardState extends State<ProjectCard> {
             AnimatedOpacity(
               duration: const Duration(milliseconds: 400),
               opacity: isHover ? 0.0 : 1.0,
-              child: FittedBox(
-                fit: BoxFit.fill,
-                child: widget.banner != null
-                    ? Image.asset(
-                        widget.banner!,
-                      )
-                    : Container(),
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(7),
+                clipBehavior: Clip.antiAliasWithSaveLayer,
+                child: FittedBox(
+                  fit: BoxFit.fill,
+                  child: widget.banner != null
+                      ? Image.asset(
+                          widget.banner!,
+
+                          // fit: BoxFit.contain,
+                        )
+                      : Container(),
+                ),
               ),
             ),
           ],

@@ -11,6 +11,7 @@ class StaticUtils {
 
   // photos
   static const String mobilePhoto = 'assets/photos/mobile.png';
+  static const String testScreen = 'assets/projects/test.png';
   static const String coloredPhoto = 'assets/photos/colored.png';
   static const String blackWhitePhoto = 'assets/photos/black-white.png';
 
@@ -19,6 +20,8 @@ class StaticUtils {
   static const String sastaticket = 'assets/work/st.png';
   static const String university = 'assets/work/cui.png';
   static const String fullterIsb = 'assets/work/flutterIsl.png';
+  static const String playstore = 'assets/work/PlayStore.png';
+  static const String appstore = 'assets/work/AppStore.png';
 
   // services
   static const String uiux = 'assets/services/ui.png';
@@ -54,9 +57,9 @@ class StaticUtils {
 
 class BodyUtils {
   static const List<Widget> views = [
-    HomePage(),
-    About(),
-    Services(),
+    // HomePage(),
+    // About(),
+    // Services(),
     Portfolio(),
     Contact(),
     Footer(),

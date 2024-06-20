@@ -29,7 +29,7 @@ class _ServiceCardState extends State<_ServiceCard> {
       splashColor: Colors.transparent,
       highlightColor: Colors.transparent,
       onTap: () {
-        cardKey.currentState!.toggleCard();
+        // cardKey.currentState!.toggleCard();
       },
       onHover: (isHovering) {
         if (isHovering) {

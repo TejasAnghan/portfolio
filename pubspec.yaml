@@ -18,7 +18,7 @@ dependencies:
   github: ^9.2.0
 
   # web related
-  flutter_html: any
+
   url_strategy: ^0.2.0
   universal_html: ^2.0.4
 
@@ -28,7 +28,7 @@ dependencies:
   # utils
   mailto: ^2.0.0
   flip_card: ^0.6.0
-  url_launcher: ^6.1.2
+  url_launcher: ^6.3.0
   cupertino_icons: ^1.0.2
   carousel_slider: ^4.0.0
   animated_text_kit: ^4.2.1
@@ -40,7 +40,6 @@ dependencies:
   # cache
   shared_preferences: ^2.0.6
 
-
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -51,7 +50,6 @@ dev_dependencies:
 # following page: https://dart.dev/tools/pub/pubspec
 # The following section is specific to Flutter.
 flutter:
-
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
@@ -61,6 +59,10 @@ flutter:
     - assets/photos/
     - assets/services/
     - assets/projects/
+    - assets/projects/KC/
+    - assets/projects/GL/
+    - assets/projects/Cosmic/
+    - assets/projects/Fixxi/
 
     - data.json
 
@@ -68,11 +70,11 @@ flutter:
     - family: Agustina
       fonts:
         - asset: fonts/agustina/agustina.otf
-    
+
     - family: Montserrat
       fonts:
         - asset: fonts/montserrat/montserrat.ttf
-    
+
     - family: Poppins
       fonts:
         - asset: fonts/poppins/Poppins-Regular.ttf

@@ -2,7 +2,6 @@ import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
 import 'package:folio/animations/entrance_fader.dart';
 import 'package:folio/configs/configs.dart';
-import 'package:folio/responsive/responsive.dart';
 import 'package:folio/sections/home/home.dart';
 
 import 'package:folio/utils/utils.dart';

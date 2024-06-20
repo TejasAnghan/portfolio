@@ -1,9 +1,6 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
-import 'package:folio/configs/configs.dart';
-import 'package:folio/constants.dart';
 import 'package:folio/utils/project_utils.dart';
-import 'package:folio/utils/utils.dart';
 import 'package:folio/widget/custom_text_heading.dart';
 import 'package:folio/widget/project_card.dart';
 
@@ -29,7 +26,7 @@ class PortfolioMobileTab extends StatelessWidget {
               projectIcon: ProjectUtils.icons[i],
               projectLink: ProjectUtils.links[i],
               projectTitle: ProjectUtils.titles[i],
-              projectDescription: ProjectUtils.description[i],
+              projectDescription: ProjectUtils.headline[i],
             ),
           ),
           options: CarouselOptions(
@@ -42,18 +39,6 @@ class PortfolioMobileTab extends StatelessWidget {
             enableInfiniteScroll: false,
           ),
         ),
-        Space.y!,
-        SizedBox(
-          height: AppDimensions.normalize(14),
-          width: AppDimensions.normalize(50),
-          child: OutlinedButton(
-            onPressed: () => openURL(StaticUtils.gitHub),
-            child: Text(
-              'See More',
-              style: AppText.l1b,
-            ),
-          ),
-        )
       ],
     );
   }
