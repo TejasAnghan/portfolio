@@ -170,12 +170,13 @@ class _ProjectDetailState extends State<ProjectDetail> {
       padding: Space.h,
       child: Column(
         children: [
-          getButton(
-              icon: Icons.arrow_back_ios_new_rounded,
-              text: "See All",
-              onTap: widget.onBackPressed),
           Space.y1!,
           if (!Responsive.isDesktop(context)) ...[
+            getButton(
+                icon: Icons.arrow_back_ios_new_rounded,
+                text: "Back",
+                onTap: widget.onBackPressed),
+            Space.y1!,
             getSlider(height, Responsive.isDesktop(context)),
             Space.y1!,
             getStoreButton(),
@@ -189,6 +190,11 @@ class _ProjectDetailState extends State<ProjectDetail> {
               if (Responsive.isDesktop(context))
                 Expanded(
                   child: Column(children: [
+                    getButton(
+                        icon: Icons.arrow_back_ios_new_rounded,
+                        text: "Back",
+                        onTap: widget.onBackPressed),
+                    Space.y2!,
                     getSlider(height, Responsive.isDesktop(context)),
                     Space.y1!,
                     getStoreButton(),
@@ -293,7 +299,7 @@ class _ProjectDetailState extends State<ProjectDetail> {
           Space.y2!,
           getButton(
               icon: Icons.arrow_back_ios_new_rounded,
-              text: "See All",
+              text: "Back",
               onTap: widget.onBackPressed),
         ],
       ),
