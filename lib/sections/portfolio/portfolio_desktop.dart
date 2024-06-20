@@ -13,7 +13,7 @@ class PortfolioDesktop extends StatefulWidget {
 }
 
 class _PortfolioDesktopState extends State<PortfolioDesktop> {
-  int? selectedIndex = 0;
+  int? selectedIndex;
   onTap(int i) {
     selectedIndex = i;
     setState(() {});
@@ -53,7 +53,7 @@ class _PortfolioDesktopState extends State<PortfolioDesktop> {
                       index: e.key,
                       banner: e.value,
                       projectIcon: ProjectUtils.icons[e.key],
-                      projectLink: ProjectUtils.links[e.key],
+                      projectLink:"",
                       projectTitle: ProjectUtils.titles[e.key],
                       projectDescription: ProjectUtils.headline[e.key],
                       onTap: onTap,

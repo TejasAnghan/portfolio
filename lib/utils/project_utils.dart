@@ -1,67 +1,3 @@
-enum T {
-  Flutter,
-  Dart,
-  NETCore,
-  Java,
-  Kotlin,
-  Swift,
-  Git,
-  GitHub,
-  RESTAPIs,
-  GraphQL,
-  VB,
-  Figma,
-  Android,
-  iOS,
-  FirebaseAuthentication,
-  FirebaseRealtimeDatabase,
-  CloudFirestore,
-  MicrosoftSQLServer,
-  Oracle,
-  PL_SQL,
-  StoredProcedures,
-  TCP_IP,
-  FTP,
-  SFTP,
-  cPanel,
-  MySQL,
-  BlockPattern,
-  Provider,
-  StateManagement,
-  Microservices,
-  ServiceMonoliths,
-  CI_CD,
-  PaymentGateways,
-  VIPER,
-  MVC,
-  MVVM,
-  UnitTesting,
-  TechnicalSupport,
-  NetworkTechnologies,
-  WidgetStateManagement,
-  MobileUIDesign,
-  MobilePerformanceOptimization,
-  APIIntegration,
-  MobileArchitecture, // Added
-  UserExperience, // Added
-  ModernUI_UXDesign, // Added
-  PerformanceOptimization, // Added
-  Troubleshooting, // Added
-  Debugging, // Added
-  CodeReviews, // Added
-  AgileScrum, // Added
-  Kanban, // Added
-  ContinuousIntegration, // Added
-  ContinuousDeployment, // Added
-  UXUIDesign, // Added
-  Firebase, // General Firebase to cover all Firebase services
-  PL_SQLProgramming, // Added for PL/SQL programming
-  TechnicalDocumentation, // Added for documentation
-  GeoLocation,
-  MultiLanguageSupport, // Added for Multi-Language Support
-  LocalStorage // Added for Local Storage
-}
-
 class ProjectUtils {
   static const List<String> titles = [
     "Korean Conhvenience",
@@ -104,15 +40,15 @@ class ProjectUtils {
 
   static const List<String> headline = [
     "A Convenient Way to Find and Purchase Korean Products Near You.",
-    "Application of Holy book of Muslims, Al-Qur'an. Developed using Flutter. Powered with live RestAPI given in README.md",
-    "A Phramacy app developed using Flutter powered with Firebase as database with Doctor and Patient panels.",
+    "Seamless Device Repair Services at Your Fingertips",
+    "Efficient Wholesale Management and Delivery App",
     "Advanced Plant Growth Control Application",
   ];
 
   static const List<String> description = [
     "Korean Convenience is a user-friendly mobile application designed to help users locate Korean products available in nearby stores. Leveraging advanced geolocation technology, the app provides real-time information on product availability, including detailed allergen information to ensure safe and informed purchases. With a focus on performance and user experience, Korean Convenience employs Bloc state management, local storage solutions, and continuous integration/continuous deployment (CI/CD) pipelines to deliver a seamless and reliable service. Whether you're looking for a specific Korean snack or need to avoid certain allergens, Korean Convenience makes your shopping experience effortless and enjoyable.",
-    "Application of Holy book of Muslims, Al-Qur'an. Developed using Flutter. Powered with live RestAPI given in README.md",
-    "A Phramacy app developed using Flutter powered with Firebase as database with Doctor and Patient panels.",
+    "Fixxi Repair is a versatile mobile application designed to streamline the repair process for electronic devices. Built using Flutter and Dart, it integrates advanced features like Bloc state management and Firebase Database for efficient data handling and real-time updates. Users can locate nearby repair shops, book appointments, and receive cost estimates based on device and damage details. The app supports convenient pickup and drop-off scheduling, and includes secure online payments via Stripe. With integrated notifications powered by Firebase Cloud Functions, users stay informed about repair and delivery statuses. Fixxi Repair ensures reliability and performance with rigorous unit testing and automated CI/CD pipelines.",
+    "Cosmic Candy is a robust mobile application tailored for wholesalers, facilitating streamlined management of sales to vendors. Developed using Flutter and Dart, the app integrates advanced features such as Bloc state management and Firebase Database for efficient data handling and real-time updates. Wholesalers can track large-scale transactions, manage invoices, and seamlessly accept payments through integrated Stripe payment gateway. GeoLocation services enable efficient product delivery, allowing drivers to follow optimized routes set and updated directly through the app. Cosmic Candy ensures operational efficiency with automated CI/CD pipelines, rigorous unit testing, and real-time notifications via Firebase Cloud Functions.",
     "Green Leopard is a sophisticated mobile application designed to optimize and automate the environment for plant growth. Using a combination of WiFi connectivity and Firebase Realtime Database, the app allows users to monitor and control key factors like humidity, temperature, and light. Users can set detailed schedules for these factors over days and months, ensuring optimal growth conditions. Additionally, Green Leopard provides real-time image updates from the connected machine, enhancing the user’s ability to monitor plant health. The app leverages cutting-edge technologies including Flutter, Dart, and Bloc state management to deliver a seamless and reliable user experience.",
   ];
 
@@ -123,7 +59,7 @@ class ProjectUtils {
       "iOS",
       "Dart",
       "RESTAPIs",
-      "Block Pattern",
+      "Bloc Pattern",
       "Geo Location",
       "Notification",
       "Multi Language Support",
@@ -131,20 +67,45 @@ class ProjectUtils {
       "Unit Testing",
       "CI/CD",
     ],
-    [],
-    [],
+    [
+      "Flutter",
+      "Dart",
+      "Stripe Payment Gateway",
+      "RESTAPIs",
+      "Bloc Pattern",
+      "Firebase Database",
+      "Local Storage",
+      "Unit Testing",
+      "Maps Integration",
+      "CI/CD",
+      "Android",
+      "iOS",
+      "Notifications (Firebase Cloud Functions)",
+    ],
     [
       "Flutter",
       "Dart",
       "RESTAPIs",
-      "Block Pattern",
-      "Native Channels (Android & iOS)",
+      "Bloc Pattern",
       "Local Storage",
       "Unit Testing",
       "Notification",
       "CI/CD",
       "Android",
       "iOS",
+    ],
+    [
+      "Flutter",
+      "Dart",
+      "RESTAPIs",
+      "Bloc Pattern",
+      "Local Storage",
+      "Unit Testing",
+      "Notification",
+      "CI/CD",
+      "Android",
+      "iOS",
+      "Native Channels (Android & iOS)",
     ],
   ];
 
@@ -159,16 +120,26 @@ class ProjectUtils {
       "Automated Deployment: Uses CI/CD pipelines for automatic testing, delivery, and deployment, ensuring a smooth and consistent user experience.",
     ],
     [
-      "Datase Connection",
-      "Interactive Chat screen",
-      "CRED Operation",
-      "API Integration"
+      "Nearby Shop Locator: Helps users find nearby device repair shops based on geolocation.",
+      "Appointment Booking: Enables online booking of repair appointments directly through the app.",
+      "Cost Estimation: Provides approximate repair costs by entering device and damage information.",
+      "Pickup & Drop-off Scheduling: Allows users to schedule convenient times for device pickup and drop-off.",
+      "Real-time Notifications: Updates users on the status of their device repair and delivery through Firebase Cloud Functions.",
+      "Secure Payments: Integrates Stripe for secure and efficient online payment transactions.",
+      "State Management: Utilizes Bloc pattern to manage app state effectively and optimize performance.",
+      "Quality Assurance: Implements unit testing to identify and resolve bugs before deploying to production.",
+      "Continuous Integration/Continuous Deployment (CI/CD): Automates testing and deployment processes to ensure efficient app delivery.",
     ],
     [
-      "Datase Connection",
-      "Interactive Chat screen",
-      "CRED Operation",
-      "API Integration"
+      "Transaction Tracking: Enables wholesalers to monitor sales from large vendors to small vendors, storing details such as invoices and payments.",
+      "Invoice Management: Provides comprehensive tracking and management of invoices for all clients.",
+      "Payment Processing: Facilitates seamless payment acceptance through the app.",
+      "Delivery Management: Utilizes GeoLocation services for efficient product delivery to stores, managed by drivers.",
+      "Route Planning: Allows wholesalers to set and update delivery routes directly in the app, ensuring optimized delivery efficiency.",
+      "Real-time Updates: Provides live updates on delivery status and transaction progress.",
+      "Secure Payments: Integrates Stripe for secure and fast online payment transactions.",
+      "State Management: Optimizes app performance with Bloc state management to minimize unnecessary UI component rebuilds.",
+      "Quality Assurance: Implements unit testing to detect and resolve bugs before deployment.",
     ],
     [
       "WiFi and Bluetooth Connectivity: Connects with plant growth machines to control environmental factors.",
@@ -180,19 +151,5 @@ class ProjectUtils {
       "Reliability: Implements unit testing to prevent crashes and fix bugs before production release.",
       "Native Channels Integration: Ensures seamless communication between the mobile app and machines via Bluetooth and WiFi on both Android and iOS platforms."
     ],
-  ];
-
-  static const List<String> links = [
-    "https://pub.dev/packages/awesome_snackbar_content",
-    "https://github.com/mhmzdev/The_Holy_Quran_App",
-    "https://github.com/mhmzdev/MedKit-Pharmacy-App-Using-Flutter",
-    "https://github.com/mhmzdev/Here-I-Am-Alert-App",
-    "https://github.com/mhmzdev/Covid19-Tracker-App",
-    "https://github.com/mhmzdev/Messenger-Chat-Head-Flutter-UI",
-    "https://github.com/mhmzdev/flutter.dev-Flutter-Web-Clone",
-    "https://github.com/mhmzdev/Earbender_Music_App",
-    "https://github.com/mhmzdev/FTP_GUI_Java",
-    "https://github.com/mhmzdev/My-Order-Resturant-Ordering-System",
-    "https://github.com/mhmzdev/Hidev_Web",
   ];
 }
