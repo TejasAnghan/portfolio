@@ -91,7 +91,7 @@ class AboutDesktop extends StatelessWidget {
                       Space.y!,
                       Wrap(
                         crossAxisAlignment: WrapCrossAlignment.start,
-                        alignment: WrapAlignment.spaceAround,
+                        alignment: WrapAlignment.start,
                         children: kTools
                             .map((e) => ToolTechWidget(
                                   techName: e,

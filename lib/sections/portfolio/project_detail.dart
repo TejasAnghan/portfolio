@@ -247,7 +247,7 @@ class _ProjectDetailState extends State<ProjectDetail> {
                       Space.y!,
                       Wrap(
                         crossAxisAlignment: WrapCrossAlignment.start,
-                        alignment: WrapAlignment.spaceAround,
+                        alignment: WrapAlignment.start,
                         children: ProjectUtils.tools[widget.index]
                             .map((e) => ToolTechWidget(techName: e))
                             .toList(),
@@ -270,7 +270,8 @@ class _ProjectDetailState extends State<ProjectDetail> {
                         alignment: WrapAlignment.start,
                         children: ProjectUtils.features[widget.index]
                             .map((e) => ToolTechWidget(
-                                  techName: e,
+                                  techName: e[1],
+                                  title: e[0],
                                   flex: 1,
                                   bottomPadding: 5,
                                   style: AppText.b2!.copyWith(

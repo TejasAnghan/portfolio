@@ -53,7 +53,7 @@ class _PortfolioDesktopState extends State<PortfolioDesktop> {
                       index: e.key,
                       banner: e.value,
                       projectIcon: ProjectUtils.icons[e.key],
-                      projectLink:"",
+                      projectLink: "",
                       projectTitle: ProjectUtils.titles[e.key],
                       projectDescription: ProjectUtils.headline[e.key],
                       onTap: onTap,
