@@ -5,7 +5,7 @@ class ServicesUtils {
     StaticUtils.appDev,
     StaticUtils.uiux,
     StaticUtils.rapid,
-    StaticUtils.openSource,
+    // StaticUtils.openSource,
   ];
 
   static const List<String> servicesTitles = [
