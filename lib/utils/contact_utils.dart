@@ -14,7 +14,7 @@ class ContactUtils {
   ];
 
   static const List<String> details = [
-    "Mississauga, ON, Canada",
+    "Ontario, Canada",
     "+1 437-423-5559",
     "tejanghan@gmail.com",
   ];
